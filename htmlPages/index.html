@@ -8,9 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    
+    <header id="head-el">
+        <div class="head-container">
+            <div class="direction-btns">
+                <a href="#" class="left-btn"><i class="fa fa-angle-left"></i></a>
+                <a href="#" class="left-btn"><i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="extra-items">
+                <div class="upgrade">upgrade</div>
+                <div class="profile">
+                    <div><i class="fa fa-user-circle"></i></div>
+                    <p class="user-name">Tapish</p>
+                    <select name="account" id="user-details">
+                        <option value="" selected></option>
+                        <option value="account"><a href="#">account</a></option>
+                        <option value="profile"><a href="#">profile</a></option>
+                        <option value="upgradeTo"><a href="#">upgrade to premium</a></option>
+                        <option value="setting"><a href="#">settings</a></option>
+                        <option value="logout"><a href="#">logout</a></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
