@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(20, 20, 20));
+}
+
+.head-container{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: calc(100% - 200px);
+    right: 0;
+    padding: 20px 10px;
+}
+.direction-btns{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    font-size: 2em;
+}
+.direction-btns>a{
+    border-radius: 50%;
+    background-color: rgba(15, 15, 15, 0.6);
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direction-btns i{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.extra-items{
+    display: flex;
+    justify-content: space-between;
+}
+.upgrade{
+    border: 1px solid white;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.upgrade:hover{
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    background: rgba(15, 15, 15, 0.6);
+    min-width: 120px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+#user-details{
+    max-width: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#user-details>div{
+    background-color: rgb(50, 50, 50);
+    outline: none;
+    border: none;
+    display: none;
+}
+
+#user-details>div:first-child{
+    display: block;
+    position: static !important;
+    transform: none !important;
+    background-color: inherit !important;
+    width: inherit !important;
+}
+.profile:hover #user-details>div{
+    display: block;
+    position:absolute;
+    transform: translate(-80%, 10px);
+    width: 200px;
+}
+#user-details>div>div{
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#user-details a{
+    display: block;
+    width: 100%;
+}
+
+
