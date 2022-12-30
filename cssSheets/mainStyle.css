@@ -118,6 +118,11 @@ img{
         display: none;
     }
 }
+@media screen and (max-width:500px) {
+    .head-container{
+        width: calc(100% - 50px);
+    }
+}
 
 /* *******************************header******************************************** */
 /* *********************************side pannel***************************************** */
@@ -162,6 +167,40 @@ img{
 
 .side-pannel-item p, .side-pannel-item i{
     color: rgba(255, 255, 255, .7) !important;
+}
+
+@media screen and (max-width:700px) {
+    .side-pannel{
+        width: 150px;
+    }
+    .logo{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .side-pannel{
+        width: 50px;
+    }
+    .side-pannel-item p{
+        display: none;
+    }
+    .side-pannel-item div{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    .logo>div:first-child{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        min-width: 30px;
+    }
+    .logo p{
+        display: none;
+    }
 }
 
 
