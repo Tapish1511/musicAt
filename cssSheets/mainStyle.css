@@ -162,11 +162,14 @@ img{
 }
 .side-pannel-item div{
     padding: 0 20px 0 0;
-    color: rgba(255, 255, 255, .5) !important;
 }
 
 .side-pannel-item p, .side-pannel-item i{
-    color: rgba(255, 255, 255, .7) !important;
+    color: rgba(255, 255, 255, .7);
+}
+
+.side-pannel-item:hover>a>div>i, .side-pannel-item:hover>a>p {
+    color: white;
 }
 
 @media screen and (max-width:700px) {
