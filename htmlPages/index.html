@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../cssSheets/mainStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?fadiv&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -25,14 +25,16 @@
                 <div class="profile">
                     <div><i class="fa fa-user-circle"></i></div>
                     <p class="user-name">Tapish</p>
-                    <select name="account" id="user-details">
-                        <option value="" selected></option>
-                        <option value="account"><a href="#">account</a></option>
-                        <option value="profile"><a href="#">profile</a></option>
-                        <option value="upgradeTo"><a href="#">upgrade to premium</a></option>
-                        <option value="setting"><a href="#">settings</a></option>
-                        <option value="logout"><a href="#">logout</a></option>
-                    </select>
+                    <div id="user-details">
+                        <div><i class="fa fa-angle-down"></i></div>
+                        <div>
+                            <div><a href="#">account</a></div>
+                            <div><a href="#">profile</a></div>
+                            <div><a href="#">upgrade to premium</a></div>
+                            <div><a href="#">settings</a></div>
+                            <div><a href="#">logout</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
