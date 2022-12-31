@@ -9,6 +9,8 @@
 
 body{
     background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(20, 20, 20));
+    display: grid;
+    grid-template-columns: 15% 85%;
 }
 
 img{
@@ -16,15 +18,15 @@ img{
     height: auto;
 }
 /********************************header***********************************************/
-
+.head-el{
+    grid-column: 2;
+}
 .head-container{
     display: flex;
-    position: fixed;
     justify-content: space-between;
-    width: calc(100% - 200px);
-    right: 0;
     padding: 20px 10px;
     min-width: 280px;
+
 }
 .direction-btns{
     display: flex;
@@ -97,6 +99,9 @@ img{
     transform: translate(-80%, 10px);
     width: 200px;
 }
+#user-details>div>div:hover{
+    background-color: rgb(40,40,40);
+}
 #user-details>div>div{
     padding: 10px 20px;
     width: 100%;
@@ -108,9 +113,7 @@ img{
 }
 
 @media screen and (max-width:700px) {
-    .head-container{
-        width: calc(100% - 150px);
-    }
+    
     .profile{
         min-width: 75px;
     }
@@ -119,20 +122,18 @@ img{
     }
 }
 @media screen and (max-width:500px) {
-    .head-container{
-        width: calc(100% - 50px);
-    }
+    
 }
 
 /* *******************************header******************************************** */
 /* *********************************side pannel***************************************** */
 .side-pannel{
-    float: left;
+    grid-column: 1;
+    grid-row: 1/span 2;
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding: 20px;
-    width: 200px;
     background-color: black;
 }
 
@@ -142,10 +143,13 @@ img{
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding: 0 10px;
 }
 .logo>div:first-child{
     width: 25%;
     margin: 0 10px;
+    min-width: 30px;
+    flex-wrap: wrap;
 }
 
 .side-pannel-items{
@@ -156,6 +160,7 @@ img{
 .side-pannel-item{
     list-style: none;
     padding: 20px 0;
+    font-size: 1.2em;
 }
 .side-pannel-item>a{
     display: flex;
@@ -172,18 +177,12 @@ img{
     color: white;
 }
 
-@media screen and (max-width:700px) {
-    .side-pannel{
-        width: 150px;
-    }
+
+
+@media screen and (max-width:850px) {
+    
     .logo{
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .side-pannel{
-        width: 50px;
     }
     .side-pannel-item p{
         display: none;
@@ -192,14 +191,14 @@ img{
         margin: 0;
         padding: 0;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     .logo>div:first-child{
         width: 100%;
         padding: 0;
         margin: 0;
-        min-width: 30px;
+        
     }
     .logo p{
         display: none;
