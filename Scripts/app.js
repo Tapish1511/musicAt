@@ -13,7 +13,6 @@
 <div>*/
 
 let bodyContainer = document.getElementById('main-body');
-console.log('hello world');
 
 /* <a href="#" class="card-item">
     <div class="image-container">
@@ -111,7 +110,6 @@ async function main(){
     let token = await getAccessToken();
     let categories = await getCategory(token);
     let playlists = await getAllPlayList(token, categories, 10);
-    console.log(playlists);
     bodyContainer.innerHTML = createBody(categories, playlists);
 }
 
@@ -146,11 +144,9 @@ function createBody(categories, playlists){
     for(let i=0; i<playlists.length; i++){
         let allCards = '';
         for(let j=0; j<playlists[i].length; j++){
-            console.log(playlists[i][j].name);
             allCards += createCard(playlists[i][j].images[0].url, playlists[i][j].name, playlists[i][j].description);
         }
 
-        console.log(categories[i].name + ' @album');
         mainBody += createBodyItem(categories[i].name, allCards)
     }
     // console.log(mainBody);
