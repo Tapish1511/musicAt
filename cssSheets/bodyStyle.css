@@ -13,6 +13,7 @@
 .card-container{
     display: flex;
     overflow-x: hidden;
+    align-items: stretch;
 }
 
 .card-item{
@@ -22,6 +23,7 @@
     border-radius: 5px;
     background-color: rgb(50, 50, 50);
     min-width: 200px;
+    max-height: 350px;
 }
 
 /* .card-item:hover{
