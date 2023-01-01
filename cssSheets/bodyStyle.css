@@ -1,0 +1,50 @@
+.body-items{
+    overflow-y: scroll;
+    padding: 10px 20px;
+    margin: 10px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+.body-items::-webkit-scrollbar{
+    display: none;
+}
+
+.card-container{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.card-item{
+    margin: 20px 30px;
+    border: 1px solid rgb(50, 50, 50);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(50, 50, 50);
+    min-width: 200px;
+}
+
+/* .card-item:hover{
+    cursor: pointer;
+} */
+.image-container{
+    min-width: 120px;
+}
+
+.card-heading{
+    padding: 10px 0;
+    text-overflow: clip;
+}
+.card-artist{
+    font-size: .9em;
+    color: rgb(141, 141, 141);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.read-more{
+    text-align: right;
+}
+.read-more>a{
+    color: rgb(141, 141, 141);
+}
